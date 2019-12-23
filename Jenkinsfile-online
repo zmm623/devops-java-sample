@@ -107,7 +107,7 @@ pipeline {
         stage('deploy to production') {
           when{
             expression{
-              return params.TAG_NAME =~ /v.*/
+               return params.TAG_NAME =~ /v.*/
             }
           }
           steps {
